@@ -40,37 +40,30 @@ namespace Biudzetas
                 {
                     case 1:
                         IvestiPajamas();
-                        Console.WriteLine("Iveskite sekancios operacijos numeri");
                         break;
                     case 2:
                         IvestiIslaidas();
-                        Console.WriteLine("Iveskite sekancios operacijos numeri");
                         break;
                     case 3:
                         PajamuPerziura();
-                        Console.WriteLine("Iveskite sekancios operacijos numeri");
                         break;
                     case 4:
                         IslaiduPerziura();
-                        Console.WriteLine("Iveskite sekancios operacijos numeri");
                         break;
                     case 5:
                         SuskaiciuotiPajamuSuma();
-                        Console.WriteLine("Iveskite sekancios operacijos numeri");
                         break;
                     case 6:
                         SuskaiciuotiIslaiduSuma();
-                        Console.WriteLine("Iveskite sekancios operacijos numeri");
                         break;
                     case 7:
                         SuskaiciuotiBalansa();
-                        Console.WriteLine("Iveskite sekancios operacijos numeri");
                         break;
                     case 8:
                         FiltruotiIslaidas();
-                        Console.WriteLine("Iveskite sekancios operacijos numeri");
                         break;
                 }
+                Console.WriteLine("Iveskite sekancios operacijos numeri");
             }
         }
 
@@ -78,13 +71,12 @@ namespace Biudzetas
         {
             string relativePath = @"..\..\..\Pajamos.txt";
             Console.WriteLine("Iveskite pajamas:\n menesis pavadinimas suma");
-            string pajamos = Console.ReadLine();
-            File.AppendAllLines(relativePath, new string[] { pajamos });
+            string pajamos = Convert.ToString(Console.ReadLine());
+            File.AppendAllLines(relativePath, new string[] {pajamos});
             PapildytiPajamas();
         }
         public static void PapildytiPajamas()
         {
-
             Console.WriteLine("Jei toliau pildysite spauskite y(Yes)\njei uzbaigete spauskite n(No)");
             string p = Console.ReadLine();
             switch (p)
@@ -93,7 +85,6 @@ namespace Biudzetas
                     IvestiPajamas();
                     break;
                 case "n":
-                    IvestiIslaidas();
                     break;
             }
         }
@@ -101,13 +92,12 @@ namespace Biudzetas
         {
             string relativePath1 = @"..\..\..\Islaidos.txt";
             Console.WriteLine("Iveskite islaidas:\n menesis pavadinimas suma");
-            string islaidos = Console.ReadLine();
+            string islaidos = Convert.ToString(Console.ReadLine());
             File.AppendAllLines(relativePath1, new string[] { islaidos });
             PapildytiIslaidas();
         }
         public static void PapildytiIslaidas()
         {
-
             Console.WriteLine("Jei toliau pildysite spauskite y(Yes)\njei uzbaigete spauskite n(No)");
             string p = Console.ReadLine();
             switch (p)
@@ -116,7 +106,6 @@ namespace Biudzetas
                     IvestiIslaidas();
                     break;
                 case "n":
-
                     break;
             }
         }
