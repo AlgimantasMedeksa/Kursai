@@ -1,0 +1,4 @@
+sausis atlyginimas 950,50
+vasaris atlyginimas 830,79
+kovas atlyginimas 890,30
+balandis atlyginimas 899,56

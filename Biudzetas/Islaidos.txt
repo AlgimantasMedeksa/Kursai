@@ -1,0 +1,15 @@
+sausis maistas 301,89
+sausis drabužiai 250,62
+sausis higienosPriemonės 50,41
+sausis poilsioIslaidos 45,23
+sausis išlaidosAutomobiliui 56,89
+vasaris maistas 325,70
+vasaris drabuziai 105,56
+vasaris higienosPriemonės 29,16
+vasaris išlaidosAutomobiliui 89,56
+vasaris stambusPirkiniai 700,80
+kovas maistas 342,45
+kovas drabužiai 72,46
+kovas poilsioIslaidos 40,00
+kovas būstoRemontas 258,46
+kovas išlaidosAutomobiliui 79,23
